@@ -128,11 +128,9 @@ void Requisitos_de_verificacion(const vector<Arboles> &datos_informativos)
           cout << "[1].DOCUMENTACION LEGAL" << endl;
           cout << "[2].CERTIFICACION FORESTAL" << endl;
           cout << "[3].REGISTRO DE PARCELAS" << endl;
-          cout << "[4].CUMPLIMIENTO AMBIENTAL" << endl;
-          cout << "[5].FECHA DE CORTE O COSECHA LEGAL" << endl;
-          cout << "[6].CERTIFICAION DE PROOVEDORES" << endl;
-          cout << "[7].REGISTRO DE DATOS" << endl;
-          cout << "[8].COLABORACION CON LAS AUTORIDADES" << endl;
+          cout << "[4].FECHA DE CORTE O COSECHA LEGAL" << endl;
+          cout << "[5].CERTIFICAION DE PROVEEDORES" << endl;
+          cout << "[6].COLABORACION CON LAS AUTORIDADES" << endl;
           cout << "0.salir" << endl;
           cout << "Ingrese una opcion para ver requisito:" << endl;
           cin >> date;
@@ -148,6 +146,31 @@ void Requisitos_de_verificacion(const vector<Arboles> &datos_informativos)
                break;
 
           case 2:
+               cout << "   CERTIFICACION FORESTAL:" << endl;
+               cout << " La obtencion de un certificado forestal puede variar segun la region; ";
+               cout << " es recomendable consultar los requisitos especificos del aplicados en tu region.  "<<endl;
+               break;
+          case 3:
+               cout << "   REGISTRO DE PARCELAS:" << endl;
+               cout << " Tener la ubicacion geografica(GPS), datos topografica. "<<endl;
+               break;
+          case 4:
+               cout << "   FECHA DE CORTE O COSECHA LEGAL:" << endl;
+               cout << " permisos forestales,evaluacion ambiental para la minimizar el impacto";
+               cout << " ambiental y garantizar la conservacion de la biodivercidad   "<<endl;
+               break;
+          case 5:
+               cout << "   CERTIFICAION DE PROVEEDORES:" << endl;
+               cout << " un certificado de proveedor, generalmente se refiere a un documento que ";
+               cout << "certifica que un proveedor cumple con ciertos estandares.   "<<endl;
+               break;
+          case 6:
+               cout << "   COLABORACION CON LAS AUTORIDADES:" << endl;
+               cout << " la colaboracion con las autoridades es esencial para garantizar el cumplimiento ";
+               cout << "normativas y fomentar practicas eticas    "<<endl;
+               break;
+          default:
+               cout << "opcion incorrecta";
                break;
           }
      } while (date != 0);
@@ -196,33 +219,69 @@ void Datos_de_la_madera(vector<Arboles> &datos_informativos)
           cout << "           LOS ARBOLES MADERABLES" << endl;
           cout << "Esta son una lista de los arboles maderables:" << endl;
           cout << "[1].CEDRO" << endl;
-          cout << "[2].ROBLE" << endl;
+          cout << "[2].CAPIRONA" << endl;
           cout << "[3].CAOBA" << endl;
-          cout << "[4].PINO" << endl;
+          cout << "[4].MOHENA" << endl;
           cout << "[5].TORNILLO" << endl;
-          cout << "[6].MOLLE" << endl;
-          cout << "[7].CUMALA" << endl;
-          cout << "[8].CAPIRONA" << endl;
-          cout << "[9].ISPINGO" << endl;
-          cout << "[10].COPAIBA" << endl;
-          cout << "[11].TAHUARI" << endl;
           cout << "0.salir" << endl;
           cout << "Ingrese una opcion de su preferencia:" << endl;
           cin >> number;
           system("cls");
-          cout<<"\n";
+          cout << "\n";
 
           switch (number)
           {
           case 1:
                cout << "EL CEDRO" << endl;
                cout << RED_TEXT << "---------------" << RESET_COLOR << endl;
+               cout << "nombre cientifico:"
+                    << "cedrus";
+               cout << "tamanio de crecimiento:30 a 60 de altura";
+               cout << "tiempo de vida: 2000 anios";
+               cout << "Es una especie importante en la industria maderera peruana y ";
+               cout << "se utiliza para la fabricacion de muebles y carpinteria" << endl;
+               break;
+
+          case 2:
+               cout << "CAPIRONA" << endl;
+               cout << RED_TEXT << "---------------" << RESET_COLOR << endl;
+               cout << "Nombre cientifico:Calycophyllum spruceanum " << endl;
+               cout << "tamanio de crecimiento: 15 a 27 m de altura" << endl;
+               cout << "tiempo de vida: 50 a 70 anios" << endl;
                cout << "Es una especie importante en la industria maderera peruana y ";
                cout << "se utiliza para la fabricacion de muebles y carpinteria" << endl;
 
                break;
 
-          case 2:
+          case 3:
+               cout << "CAOBA" << endl;
+               cout << RED_TEXT << "---------------" << RESET_COLOR << endl;
+               cout << "nombre cientifico: Swietenia macrophylla king" << endl;
+               cout << "tiempo de vida: 80 anios" << endl;
+               cout << "Es una especie importante en la industria maderera peruana y ";
+               cout << "se utiliza para la fabricacion de muebles y carpinteria" << endl;
+
+               break;
+
+          case 4:
+               cout << "MOHENA" << endl;
+               cout << RED_TEXT << "---------------" << RESET_COLOR << endl;
+               cout << "nombre cientifico: Aniba gigantiflora" << endl;
+               cout << "tiempo de vida: 40 a 50 anios" << endl;
+               cout << "Es una especie importante en la industria maderera peruana y ";
+               cout << "se utiliza para la fabricacion de muebles y carpinteria" << endl;
+               break;
+
+          case 5:
+               cout << "TORNILLO" << endl;
+               cout << RED_TEXT << "---------------" << RESET_COLOR << endl;
+               cout << "nombre cientifico: Cedrelinga catenaeformis ducke" << endl;
+               cout << "tiempo de vida: 50 a 70 anios" << endl;
+               cout << "Es una especie importante en la industria maderera peruana y ";
+               cout << "se utiliza para la fabricacion de muebles y carpinteria" << endl;
+               break;
+          default:
+               cout << "opcion no valida.";
                break;
           }
      } while (number != 0);
