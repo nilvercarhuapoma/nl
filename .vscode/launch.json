@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Programacion/tareasem7",
-      "program": "c:/Programacion/tareasem7/build/Debug/outDebug",
+      "cwd": "c:/Programacion/proyecto",
+      "program": "c:/Programacion/proyecto/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
