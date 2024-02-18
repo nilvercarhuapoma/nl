@@ -1,0 +1,4 @@
+DEPARTAMENTO:san martin
+PROVINCIA:Mariscal caseres
+DISTRITO:Huicungo
+UBICACION GEOREFERENCIADA:Localidad de mojarras-Huayabamba

@@ -1,0 +1,8 @@
+ID de la madera:233
+Fecha de corte:12
+Destino de la madera:lim
+ID del encargado:21
+ID de la madera:123
+Fecha de corte:12
+Destino de la madera:lim
+ID del encargado:123

@@ -19,9 +19,14 @@ class Arboles
     {
         return cantidad;
     }
+    void mostrar();
     
 };
+void Arboles::mostrar(){
+cout<<"los arboles son:"<<texto<<endl;
 
+
+}
 int main()
 {
 
