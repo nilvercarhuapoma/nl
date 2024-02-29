@@ -8,12 +8,12 @@ using namespace std;
 struct Usuario
 {
     string nombre;
-    string documentacion;
-    string nombre_parcela;
-    int DNI;
     int edad;
+    int DNI;
     int telefono;
     string correo;
+    string nombre_parcela;
+    string documentacion;
 };
 int main()
 {
@@ -23,7 +23,6 @@ int main()
     {
         cout << "REGISTRESE:" << endl;
         Usuario date;
-        cin.ignore();
         cout << "ingrese su nombre completo:";
         getline(cin, date.nombre);
         cout << "ingrese su edad:";
@@ -32,7 +31,12 @@ int main()
         cout << "Igrese su DNI:";
         cin >> date.DNI;
         cin.ignore();
-        cout << "ingrese el nombre de su parcela: ";
+        cout << "Ingrese su telefono:";
+        cin >> date.telefono;
+        cin.ignore();
+        cout << "Ingrese su correo electronico:";
+        getline(cin, date.correo);
+        cout << "ingrese el nombre de su fundo: ";
         getline(cin, date.nombre_parcela);
         cout << "adjunte su documentacion:";
         getline(cin, date.documentacion);
@@ -43,6 +47,8 @@ int main()
         {
             identidad << "Nombre completo: " << ident.nombre << endl;
             identidad << "DNI:" << ident.DNI << endl;
+            identidad << "Telefono:" << ident.telefono << endl;
+            identidad << "Correo electronico:" << ident.correo << endl;
             identidad << "Su edad: " << ident.edad << endl;
             identidad << "Nombre de su parcel :" << ident.nombre_parcela << endl;
             identidad << "Su documentacion: " << ident.documentacion << endl;

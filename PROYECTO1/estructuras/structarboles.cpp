@@ -9,39 +9,38 @@ struct Madera
 {
     string nombre;
     string origen_geografico;
-    int fecha_de_corte;
+    string trabajo;
+    int id_arbol;
     int cantidad;
     int edad;
-    int tamaño_parcela;
+    double tamaño_parcela;
 };
 int main()
 {
 
     vector<Madera> datos;
     int information;
-    cin.ignore();
-    ofstream Arboles("resgistro de arboles.txt");
+    ofstream Arboles("arbol.txt");
     if (Arboles.is_open())
     {
-        cout << " cuaton tipos de arboles desea registrar:";
+        cout << " cuantos tipos de arboles desea registrar:";
         cin >> information;
+        cin.ignore();
         for (int i = 0; i < information; ++i)
         {
-
+            
             Madera add;
-            cin.ignore();
+
             cout << "ingrese el nombre " << i + 1 << ": ";
             getline(cin, add.nombre);
-            cout << "ingrese el tamanio de parcela:";
+            cout << "ingrese el tamanio del terreno(hectareas):";
             cin >> add.tamaño_parcela;
             cin.ignore();
-            cout << "ingrese el anio de la madera :";
-            cin >> add.cantidad;
+            cout << "Fueron plantados por ustedes(si)(no):";
+            cin >> add.trabajo;
             cin.ignore();
             cout << "ingrese el lugar de donde procede:";
             getline(cin, add.origen_geografico);
-            cout << "ingrese la fecha de corte: ";
-            cin >> add.fecha_de_corte;
             cout << "\n";
             datos.push_back(add);
 
@@ -51,12 +50,12 @@ int main()
                 Arboles << "Tamaño de parcela: " << arbol.tamaño_parcela << endl;
                 Arboles << "Cantidad: " << arbol.cantidad << endl;
                 Arboles << "Origen geográfico: " << arbol.origen_geografico << endl;
-                Arboles << "Fecha de corte: " << arbol.fecha_de_corte << endl;
+
                 Arboles << "------------------------------------------" << endl;
             }
         }
         Arboles.close();
-        cout << "Datos guardados exitosamente en 'registro_de_arboles.txt'.\n";
+        cout << "Datos guardados exitosamente en 'arboles.txt'.\n";
     }
     else
     {

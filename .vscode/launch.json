@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Programacion/semana10/TAREA",
-      "program": "c:/Programacion/semana10/TAREA/build/Debug/outDebug",
+      "cwd": "c:/Programacion/HERENCIAS",
+      "program": "c:/Programacion/HERENCIAS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

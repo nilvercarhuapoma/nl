@@ -7,7 +7,7 @@ int main(){
     cout<<"ingrese 3 nombres\n";
     for(a=0;a<3;a++)
     {
-        cout<<"ingrese eñl nombre"<<a + 1<<" : ";
+        cout<<"ingrese el nombre "<<a + 1<<" : ";
         cin>>e[a];
     }
     cout<<"los estudiantes son de la FIIS\n";
