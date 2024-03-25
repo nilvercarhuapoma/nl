@@ -1,0 +1,2 @@
+Registro: dd, Precio: 22
+Registro: cdd, Precio: 22

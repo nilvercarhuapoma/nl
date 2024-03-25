@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Programacion/HERENCIAS",
-      "program": "c:/Programacion/HERENCIAS/build/Debug/outDebug",
+      "cwd": "c:/Programacion/PROYECTO1/estructuras/PROYECTO",
+      "program": "c:/Programacion/PROYECTO1/estructuras/PROYECTO/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
